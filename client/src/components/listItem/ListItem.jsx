@@ -16,7 +16,7 @@ export default function ListItem({ index, item }) {
   useEffect(() => {
     const getMovie = async () => {
       try {
-        const res = await axios.get(`/movies/find/ + ${item}`, {
+        const res = await axios.get("/movies/find/" + item, {
           headers: {
             token:
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDQ2MjAyNTMzOTFmMGVkOWQyMjI5YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5NTA0MjQ1MiwiZXhwIjoxNjk1NDc0NDUyfQ.B5l-igpwyz94d2LGweLyKk220ZcOWHfgjpl1fOr8AkQ",
